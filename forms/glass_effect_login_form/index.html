@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Glass Effect Login Form">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Glass Effect Login Form</title>
+</head>
+<body>
+    <main>
+        <section class="login-form">
+            <div class="login-form__wrapper">
+                <div class="login-form__header">
+                    <h5 class="login-form__title">Login</h5>
+                </div>                
+                <div class="login-form__form-area">
+                    <form action="#" class="login-form__form">
+                        <div class="login-form__field">
+                            <span class="login-form__user-icon"></span>
+                            <input type="text" placeholder="Enter Email" required class="login-form__input-email">
+                        </div>
+                        <div class="login-form__field">
+                            <span class="login-form__lock-icon"></span>
+                            <input type="password" placeholder="Password" required class="login-form__input-pas" id="form__pass">
+                            <span class="login-form__show-pas" id="form__pass-show">SHOW</span>
+                        </div>
+                        <div class="login-form__forgot-link">
+                            <a id="form__reset-pass" href="#">Forgot Password? Get Lost.</a>
+                        </div>
+                        <div class="login-form__field">
+                            <button class="login-form__button" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="reset-pas__wrapper disable">
+                <div class="reset-pas__header">
+                    <h5 class="reset-pas__title">Reset Password</h5>
+                </div>                
+                <div class="reset-pas__form-area">
+                    <form action="#" class="reset-pas__form">
+                        <div class="reset-pas__field">
+                            <span class="reset-pas__user-icon"></span>
+                            <input type="text" placeholder="Enter Email" required class="reset-pas__input-email">
+                        </div>
+                        <div class="reset-pas__forgot-text">
+                            <p>
+                                Enter the your email address and we'll send a link to reset your password.
+                            </p>
+                        </div>
+                        <div class="reset-pas__reset-buttons">
+                            <button class="reset-pas__button-submit" type="submit">Send</button>
+                            <button class="reset-pas__button-back" type="button">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main-es6.js"></script>
+</body>
+</html>
