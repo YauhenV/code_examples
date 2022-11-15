@@ -1,0 +1,212 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  background: #16BFFD; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#16BFFD), to(#CB3066));
+  background: -o-linear-gradient(top, #16BFFD, #CB3066);
+  background: linear-gradient(to bottom, #16BFFD, #CB3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+.login-form,
+.reset-pas {
+  position: absolute;
+  width: 370px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 50;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-box-shadow: 0 0 6px 0 rgba 29, 29, 29, 0.2;
+          box-shadow: 0 0 6px 0 rgba 29, 29, 29, 0.2;
+}
+.login-form__wrapper,
+.reset-pas__wrapper {
+  margin: 60px 32px;
+}
+.login-form__title,
+.reset-pas__title {
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.login-form__field,
+.reset-pas__field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(255, 255, 255, 0.9);
+}
+.login-form__field:nth-child(2),
+.reset-pas__field:nth-child(2) {
+  margin-top: 16px;
+}
+.login-form__field span,
+.reset-pas__field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.login-form__field input,
+.reset-pas__field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 2px;
+}
+.login-form__input-pas:valid ~ .login-form__show-pas,
+.login-form__input-pas:valid ~ .reset-pas__show-pas,
+.reset-pas__input-pas:valid ~ .login-form__show-pas,
+.reset-pas__input-pas:valid ~ .reset-pas__show-pas {
+  display: block;
+}
+.login-form__show-pas,
+.reset-pas__show-pas {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: changeOpacity;
+          animation-name: changeOpacity;
+}
+.login-form__forgot-link,
+.reset-pas__forgot-link {
+  text-align: left;
+  margin: 20px 0;
+}
+.login-form__forgot-link a,
+.reset-pas__forgot-link a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.login-form__forgot-link a:hover,
+.reset-pas__forgot-link a:hover {
+  text-decoration: underline;
+}
+.login-form__forgot-text,
+.reset-pas__forgot-text {
+  margin-top: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+}
+.login-form__button,
+.reset-pas__button {
+  width: 100%;
+  background: #682efc;
+  border: 1px solid #7741fd;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.login-form__button:hover,
+.reset-pas__button:hover {
+  background: rgba(74, 13, 228, 0.9607843137);
+}
+.login-form__reset-buttons,
+.reset-pas__reset-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  height: 45px;
+  width: 100%;
+  background: transparent;
+}
+.login-form__button-submit, .login-form__button-back,
+.reset-pas__button-submit,
+.reset-pas__button-back {
+  width: 100%;
+  background: #682efc;
+  border: 1px solid #7741fd;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.login-form__button-submit:hover, .login-form__button-back:hover,
+.reset-pas__button-submit:hover,
+.reset-pas__button-back:hover {
+  background: rgba(74, 13, 228, 0.9607843137);
+}
+.login-form__button-submit,
+.reset-pas__button-submit {
+  margin-right: 16px;
+}
+.login-form__lock-icon,
+.reset-pas__lock-icon {
+  background: url(../img/lock.svg) 50% 50% no-repeat;
+}
+.login-form__user-icon,
+.reset-pas__user-icon {
+  background: url(../img/user.svg) 50% 50% no-repeat;
+}
+
+.disable {
+  display: none;
+}
+
+@-webkit-keyframes changeOpacity {
+  0% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

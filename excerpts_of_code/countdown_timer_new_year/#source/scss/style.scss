@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 700;
+
+  background: url("../img/new-year-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+}
+
+.countdown {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+  &__wrapper {
+    // width: 100%;
+    // position: absolute;
+    // top: 60%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  &__timer {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & div {
+      text-align: center;
+      margin-right: 1rem;
+    }
+    & h2{
+      font-size: 5rem;
+      text-shadow: 1px 1px 5px #fff;
+
+    }
+
+    & p {
+      font-size: 1.5rem;
+
+    }
+  }
+
+  &__next-year {
+    font-size: 15rem;
+    transform: translateY(-25%);
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown {
+
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    &__timer {
+      font-size: 1rem;
+      & h2{
+        font-size: 4rem;
+      }
+      & p {
+        font-size: 1rem;
+      }
+    }
+
+    &__next-year {
+      font-size: 11rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__timer {
+      font-size: 0.5rem;
+      & h2{
+        font-size: 2rem;
+      }
+      & p {
+        font-size: 0.5rem;
+      }
+    }
+
+    &__next-year {
+      font-size: 7rem;
+    }
+  }
+}
