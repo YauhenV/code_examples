@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 72px;
+  height: 100%;
+  background: #048480;
+  transition: width 0.4s;
+}
+.sidebar button {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 50px;
+  width: 72px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 25px;
+}
+.sidebar button > img {
+  width: 24px;
+  height: 24px;
+}
+.sidebar button > span {
+  color: #f9f9f9;
+  opacity: 1;
+  transition: 0.3s;
+}
+.sidebar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.sidebar__burger {
+  place-items: center;
+  background-image: url("../img/burger-menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  transition: 0.3s;
+}
+.sidebar__header-logo {
+  height: 20px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.sidebar__nav {
+  flex: 1 1 auto;
+}
+body.open .sidebar {
+  width: 260px;
+}
+
+body.open .sidebar__burger {
+  background-image: url(../img/burger-close.png);
+}
+
+body.open .sidebar__header-logo {
+  opacity: 1;
+}
+
+body.open .sidebar button > span {
+  opacity: 1;
+  animation: appear 0.3s both;
+}
+
+body.open main {
+  left: 280px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0;
+  }
+}
+main {
+  position: relative;
+  top: 0;
+  left: 80px;
+  color: #f9f9f9;
+  transition: left 0.4s;
+}
+
+section {
+  margin: 30px 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.none {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
